@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo APP by Abdullah Kaimkhani</h1>
+        <div class="main">
+            <input id="input" placeholder="Enter a new task..." type="text">
+            <button onclick="addTodo()">Add</button>
+            <button onclick="deleteAllTodos()" class="delete-all">Delete All</button>
+        </div>
+        <ul id="list"></ul>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
